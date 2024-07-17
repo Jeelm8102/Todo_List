@@ -1,0 +1,21 @@
+Redux -> core lib
+react-redux -> implementation
+
+1. Create store:
+- Using "configureStore"
+- There should be only one store in a application.
+- introduce reducers in it.
+
+2. Feature ==> Slice
+- Using "createSlice" method
+- 3 things required: name, initialState(i.e bydefault value), reducer's list.
+- The funtion of reducers can be written separately or within the key value of reducer.
+
+Reducers: In reducer, we get access of two things, state and action.
+eg.  addTodo: (state, action) => {
+    const todo = {}
+}
+state.todos.push(todo)
+
+state: In state we get update state value in the store.
+action: It gives action.payload
